@@ -8,14 +8,14 @@ logging.basicConfig(level=logging.INFO)
 
 TOKEN = os.getenv("BOT_TOKEN")  # from Railway variables
 CHANNEL = os.getenv("CHANNEL_USERNAME")  # e.g. @YourChannelName
-REF_TARGET = int(os.getenv("REF_TARGET", "5"))
-REWARD_TEXT = os.getenv("REWARD_TEXT", "🎁 Congrats! Here’s your reward.")
+REF_TARGET = int(os.getenv("REF_TARGET", "3"))
+REWARD_TEXT = os.getenv("REWARD_TEXT", "🎁 Congrats! Here’s your reward contact @Albusayli0.")
 
 # In-memory store (resets if app restarts)
 referrals = defaultdict(lambda: {"referred": set(), "rewarded": False})
 
 HELP_TEXT = (
-    "🎯 Invite friends to our channel to get rewards!\n"
+    "🎯 Invite friends to our channel @https://t.me/melovedata to get rewards!\n"
     "1) Share your link\n"
     "2) They must join the channel and start the bot\n"
     f"3) Get {REF_TARGET} valid referrals → receive reward\n\n"
