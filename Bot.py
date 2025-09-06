@@ -15,7 +15,7 @@ REWARD_TEXT = os.getenv("REWARD_TEXT", "🎁 Congrats! Here’s your reward cont
 referrals = defaultdict(lambda: {"referred": set(), "rewarded": False})
 
 HELP_TEXT = (
-    "🎯 Invite friends to our channel @https://t.me/melovedata to get rewards!\n"
+    "🎯 Invite friends to our channel https://t.me/melovedata to get rewards!\n"
     "1) Share your link\n"
     "2) They must join the channel and start the bot\n"
     f"3) Get {REF_TARGET} valid referrals → receive reward\n\n"
